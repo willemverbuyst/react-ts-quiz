@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  p {
+  > p {
     color: #fff;
   }
 
@@ -43,7 +43,7 @@ export const Wrapper = styled.div`
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     filter: drop-shadow(2px 2px #0085a3);
@@ -53,7 +53,8 @@ export const Wrapper = styled.div`
     margin: 20px;
   }
 
-  .start,  .next {
+  .start,
+  .next {
     cursor: pointer;
     background: linear-gradient(180deg, #fff, #ffcc91);
     border: 2px solid #d38558;
